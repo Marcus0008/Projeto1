@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Site de Anime</title>
+    <title>Marvelous Anime</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background: linear-gradient(to bottom, #000044, #000022);
+            color: #fff;
         }
 
         header {
@@ -29,41 +31,41 @@
 
         nav a {
             text-decoration: none;
-            color: #333;
+            color: #fff;
             margin: 0 1em;
-        }
-
-        .highlight-section {
-            background-color: #f5f5f5;
-            padding: 2em 0;
-            text-align: center;
         }
 
         .anime-list {
             display: flex;
-            justify-content: center;
             flex-wrap: wrap;
+            justify-content: center;
             margin: 2em 0;
         }
 
         .anime-card {
             border: 1px solid #ddd;
+            background-color: rgba(255, 255, 255, 0.1);
             margin: 1em;
             padding: 1em;
             text-align: center;
+            color: #fff;
         }
 
-        footer {
-            background-color: #333;
-            color: #fff;
+        .pagination {
             text-align: center;
-            padding: 1em 0;
+            margin-top: 1em;
+        }
+
+        .pagination a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 0.5em;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Meu Site de Anime</h1>
+        <h1>Marvelous Anime</h1>
         <nav>
             <a href="#">Início</a>
             <a href="#">Animes</a>
@@ -72,27 +74,29 @@
         </nav>
     </header>
 
-    <div class="highlight-section">
-        <h2>Destaques</h2>
-        <div class="anime-list">
-            <div class="anime-card">
-                <img src="https://via.placeholder.com/200" alt="Anime 1">
-                <h3>Anime 1</h3>
-                <p>Descrição do Anime 1.</p>
-            </div>
-            <div class="anime-card">
-                <img src="https://via.placeholder.com/200" alt="Anime 2">
-                <h3>Anime 2</h3>
-                <p>Descrição do Anime 2.</p>
-            </div>
-            <div class="anime-card">
-                <img src="https://via.placeholder.com/200" alt="Anime 3">
-                <h3>Anime 3</h3>
-                <p>Descrição do Anime 3.</p>
-            </div>
+    <div class="anime-list">
+        <!-- Exemplo de 10 animes (página 1) -->
+        <div class="anime-card">
+            <h3>Anime 1</h3>
+            <p>Descrição do Anime 1.</p>
         </div>
+        <div class="anime-card">
+            <h3>Anime 2</h3>
+            <p>Descrição do Anime 2.</p>
+        </div>
+        <!-- Adicione mais animes aqui -->
     </div>
 
-    <section>
-        <h2>Sobre Nós</h2>
-       
+    <div class="pagination">
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <!-- Adicione mais páginas de acordo com a quantidade de animes -->
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Marvelous Anime</p>
+    </footer>
+</body>
+</html>
+
