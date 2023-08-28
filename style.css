@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f8f8f8;
+    background-color: #ffc0cb; /* Fundo rosa */
     margin: 0;
     padding: 0;
 }
@@ -8,32 +8,36 @@ body {
 h1 {
     text-align: center;
     margin: 20px 0;
+    color: #333; /* Cor padrão para o título */
 }
 
 .restaurant-list {
     list-style-type: none;
     padding: 0;
     margin: 20px 0;
+    display: flex; /* Exibir a lista horizontalmente */
+    justify-content: space-around; /* Espaço uniforme entre os itens */
+    flex-wrap: wrap; /* Quebrar para a próxima linha, se necessário */
 }
 
 .restaurant-list li {
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
+    text-align: center;
+    flex-basis: 30%; /* Largura máxima de cada item */
+    margin: 10px; /* Espaçamento entre os itens */
 }
 
 .restaurant-list li img {
-    max-width: 40px;
-    margin-right: 10px;
+    max-width: 100px;
+    margin-bottom: 10px;
+    display: block; /* Para centralizar horizontalmente a imagem */
+    margin: 0 auto; /* Centralizar horizontalmente */
 }
 
 .restaurant-list li a {
     text-decoration: none;
-    color: #333;
-    display: flex;
-    align-items: center;
+    color: #007bff; /* Cor azul para os links */
 }
 
 .restaurant-list li a:hover {
-    color: #ff6600;
+    color: #0056b3; /* Cor azul mais escura para hover */
 }
