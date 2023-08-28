@@ -1,43 +1,75 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #ffc0cb; /* Fundo rosa */
+    background-color: #ffffff; /* Fundo rosa */
     margin: 0;
     padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #430755;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
     text-align: center;
     margin: 20px 0;
-    color: #333; /* Cor padrão para o título */
+    padding: 10px;
+    background-color: #800080;
+    color: #000000;
+    border-radius: 5px;
 }
 
 .restaurant-list {
     list-style-type: none;
     padding: 0;
     margin: 20px 0;
-    display: flex; /* Exibir a lista horizontalmente */
-    justify-content: space-around; /* Espaço uniforme entre os itens */
-    flex-wrap: wrap; /* Quebrar para a próxima linha, se necessário */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .restaurant-list li {
+    width: calc(30% - 20px);
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #808080;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     text-align: center;
-    flex-basis: 30%; /* Largura máxima de cada item */
-    margin: 10px; /* Espaçamento entre os itens */
+    position: relative;
+    overflow: hidden;
 }
 
 .restaurant-list li img {
-    max-width: 100px;
+    max-width: 120px;
     margin-bottom: 10px;
-    display: block; /* Para centralizar horizontalmente a imagem */
-    margin: 0 auto; /* Centralizar horizontalmente */
+    display: block;
+    margin: 0 auto;
 }
 
-.restaurant-list li a {
+.square {
+    width: 60px;
+    height: 60px;
+    background-color: #800080;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    clip-path: polygon(100% 0, 100% 100%, 0 100%);
+    transform: rotate(45deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square a {
+    color: #fff;
     text-decoration: none;
-    color: #007bff; /* Cor azul para os links */
 }
 
-.restaurant-list li a:hover {
-    color: #0056b3; /* Cor azul mais escura para hover */
+.square a:hover {
+    text-decoration: underline;
 }
