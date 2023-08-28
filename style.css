@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.restaurant-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.restaurant-list li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.restaurant-list li img {
+    max-width: 40px;
+    margin-right: 10px;
+}
+
+.restaurant-list li a {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.restaurant-list li a:hover {
+    color: #ff6600;
+}
