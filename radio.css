@@ -8,7 +8,7 @@ body {
 }
 
 .music-app {
-    background-color: #ffffff;
+    background-color: #646060;
     max-width: 400px;
     margin: 0 auto;
     padding: 20px;
@@ -38,7 +38,7 @@ h1 {
 
 #playlist li:hover {
     background-color: #0034e0; /* Azul */
-    color: #fff;
+    color: #d32b2b;
 }
 
 .expanded-info {
@@ -51,7 +51,7 @@ h1 {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(238, 204, 204, 0.9);
+    background-color: rgba(49, 43, 43, 0.9);
     z-index: 1000;
     overflow: auto;
 }
@@ -75,7 +75,7 @@ h1 {
 
 #next-button {
     background-color: #0578eb; /* Azul */
-    color: #fff;
+    color: #161313;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
@@ -83,6 +83,7 @@ h1 {
 }
 
 #next-button:hover {
-    background-color: #fff;
+    background-color: #141111;
     color: #ff020f; /* Azul */
 }
+
