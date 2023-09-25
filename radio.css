@@ -1,25 +1,25 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #1e90ff; /* Azul */
+    background-color: #4297ec; /* Azul */
     color: #fff; /* Texto branco */
     margin: 0;
     padding: 0;
 }
 
 .music-app {
-    background-color: #fff;
+    background-color: #ffffff;
     max-width: 400px;
     margin: 0 auto;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(209, 42, 42, 0.2);
     position: relative;
     overflow: hidden;
 }
 
 h1 {
-    color: #1e90ff; /* Azul */
+    color: #000000; /* Azul */
 }
 
 #playlist {
@@ -37,21 +37,35 @@ h1 {
 }
 
 #playlist li:hover {
-    background-color: #1e90ff; /* Azul */
+    background-color: #0034e0; /* Azul */
     color: #fff;
 }
 
-.expanded-name {
+.expanded-info {
     display: none;
     font-size: 18px;
     margin-top: 10px;
     color: #1e90ff; /* Azul */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(238, 204, 204, 0.9);
+    z-index: 1000;
+    overflow: auto;
 }
 
-.expanded-image {
-    display: none;
+.expanded-info h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #32507c; /* Texto branco */
+}
+
+.expanded-info img {
     max-width: 100%;
-    max-height: 80vh;
+    max-height: 100%;
+    display: block;
     margin: 0 auto;
 }
 
@@ -60,7 +74,7 @@ h1 {
 }
 
 #next-button {
-    background-color: #1e90ff; /* Azul */
+    background-color: #0578eb; /* Azul */
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -70,5 +84,5 @@ h1 {
 
 #next-button:hover {
     background-color: #fff;
-    color: #1e90ff; /* Azul */
+    color: #ff020f; /* Azul */
 }
