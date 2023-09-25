@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #1e90ff; /* Azul */
+    color: #fff; /* Texto branco */
+    margin: 0;
+    padding: 0;
+}
+
+.music-app {
+    background-color: #fff;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+h1 {
+    color: #1e90ff; /* Azul */
+}
+
+#playlist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#playlist li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+}
+
+#playlist li:hover {
+    background-color: #1e90ff; /* Azul */
+    color: #fff;
+}
+
+.expanded-name {
+    display: none;
+    font-size: 18px;
+    margin-top: 10px;
+    color: #1e90ff; /* Azul */
+}
+
+.expanded-image {
+    display: none;
+    max-width: 100%;
+    max-height: 80vh;
+    margin: 0 auto;
+}
+
+#controls {
+    margin-top: 10px;
+}
+
+#next-button {
+    background-color: #1e90ff; /* Azul */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#next-button:hover {
+    background-color: #fff;
+    color: #1e90ff; /* Azul */
+}
